@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  sybase:
+    container_name: sybase
+    image: ifnazar/sybase_15_7:latest
+    command: [ "bash", "/sybase/start" ]
+    ports:
+      - "5000:5000"
+    hostname: dksybase
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: password
