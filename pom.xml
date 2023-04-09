@@ -37,10 +37,10 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-vertx</artifactId>
     </dependency>
-    <dependency>
+    <!-- <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-reactive-messaging-rabbitmq</artifactId>
-    </dependency>
+    </dependency> -->
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-container-image-docker</artifactId>
@@ -57,9 +57,18 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy-reactive</artifactId>
     </dependency>
+    <!-- <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-agroal</artifactId>
+    </dependency> -->
+    <!-- <dependency>
+      <groupId>jdbc.sybase</groupId>
+      <artifactId>jconnect</artifactId>
+      <version>7.7</version>
+    </dependency> -->
     <dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-resteasy-reactive</artifactId>
+      <artifactId>quarkus-reactive-routes</artifactId>
     </dependency>
     <dependency>
       <groupId>io.vertx</groupId>
@@ -67,11 +76,19 @@
       <version>4.4.1</version>
     </dependency>
     <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.6.0</version>
+    </dependency>
+    <dependency>
+      <groupId>net.sourceforge.jtds</groupId>
+      <artifactId>jtds</artifactId>
+      <version>1.3.1</version>
+    </dependency>
+    <dependency>
       <groupId>com.sybase.jdbcx</groupId>
       <artifactId>jconn4d</artifactId>
       <version>1.2</version>
-      <scope>system</scope>
-      <systemPath>${pom.basedir}/lib/jconn4.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
